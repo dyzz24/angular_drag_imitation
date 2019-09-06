@@ -1,0 +1,11 @@
+<span>Drag us</span>
+<div class="wrapp">   
+<div class="dragelems" *ngFor="let dragelem of this.dragElems"
+(mousedown)="setDragData($event, dragelem, dragElem)"
+
+#dragElem
+>{{dragelem.name}}</div>
+</div>
+<span *ngIf="setDropData">{{setDropData}}</span>
+<div class="dragTarget" *ngIf="this.copyDragElem" (mouseup)='drop()'></div>
+

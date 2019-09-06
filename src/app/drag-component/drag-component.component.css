@@ -1,0 +1,45 @@
+.wrapp {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.dragelems {
+    display: flex;
+    margin-right: 8px;
+    height: 44px;
+    border-radius: 14px;
+    background: rgb(94, 93, 93);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    color: white;
+}
+
+.dragTarget {
+    width: 50%;
+    height: 550px;
+    background: rgb(236, 230, 230);
+    border: 2px dashed gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    color: black;
+    margin-top: 26px;
+    border-radius: 14px;
+}
+
+.dragTarget::before {
+    content: 'Drop'
+}
+
+.dragStart {
+    background: rgba(39, 125, 238, 0.719);
+}
+
+span {
+    margin-top: 12px;
+    font-size: 22px;
+}
